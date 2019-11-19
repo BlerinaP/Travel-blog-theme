@@ -40,3 +40,7 @@ nav.main-navigation ul li a:hover{
         margin-right: 20px;
     }
 }
+/*Header*/
+.site-header{
+    height: 600px;
+}

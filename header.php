@@ -6,9 +6,11 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    <?php $featured = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');?>
+    <?php $featured = $featured[0]; ?>
 
-<header>
-    <nav>
+<header class="site-header" style="background-image:url(<?php echo $featured ?>);">
+    <nav class="main-navigation">
         <div class="container">
             <div class="row">
                 <div class="navbar-header">
