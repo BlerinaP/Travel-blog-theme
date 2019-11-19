@@ -1,7 +1,18 @@
-        <footer>
+  <footer>
+      <div class="container">
+          <div class row>
+              <div class="col-sm-8">
+                  <div class="row">
+                    <?php dynamic_sidebar('footer_widget'); ?>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  menu here
+              </div>
+          </div>
+      </div>
+   </footer>
+     <?php wp_footer(); ?>
+   </body>
 
-        </footer>
-        <?php wp_footer(); ?>
-     </body>
-
-   </html>
+</html>
