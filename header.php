@@ -14,7 +14,9 @@
                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" class="img-responsive">
             </div>
             <div class="col-sm-8">
-                main menu here
+                <?php wp_nav_menu(array(
+                   'theme_location' => 'main_menu'
+                ));?>
             </div>
         </div>
     </div>
