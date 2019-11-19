@@ -7,3 +7,36 @@ Version: 1.0
 Lisence: GNU General Public License or Later
 Tags: HTML%, CSS3, Sidebar, Travel, Blog
  */
+
+/*Nav menu style*/
+nav.main-navigation {
+    background-color: #008fd1;
+}
+nav.main-navigation ul{
+    margin-top: 25px;
+}
+nav.main-navigation ul li{
+    margin-bottom: 10px;
+    text-align: center;
+}
+nav.main-navigation ul li a{
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+nav.main-navigation ul li a:hover{
+    background-color: transparent;
+}
+.navbar-toggle{
+    border: 1px solid #ffffff;
+}
+.navbar-toggle .icon-bar{
+    background-color: #ffffff;
+}
+@media (min-width: 768px){
+    nav.main-navigation ul li{
+        margin-right: 20px;
+    }
+}
