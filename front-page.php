@@ -4,7 +4,7 @@
     <section class="container content">
         <div class="row">
             <?php $args = array(
-             'posts_perpage' => 6
+             'posts_per_page' => 6
             );  ?>
             <?php $entries = new WP_Query($args); while($entries->have_posts()): $entries->the_post();?>
                <div class="col-xs-12 col-md-6 col-lg-4 entry">
@@ -21,6 +21,19 @@
                    </div>
                </div>
             <?php endwhile; wp_reset_postdata(); ?>
+        </div>
+    </section>
+    <section class="categories container">
+        <h2 class="text-center">Categories</h2>
+        <?php $categories = get_categories(); ?>
+        <div class="row">
+            <?php foreach($categories as $category): ?>
+                <div class="col-xs-6 col-md-6 col-lg-3 category">
+                    <a href="<?php echo get_category_link($category->cat_ID);?>">
+                        <?php echo $category->name; ?>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
     </section>
 
