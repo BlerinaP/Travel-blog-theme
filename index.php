@@ -2,3 +2,4 @@
 <?php
 echo "Hello there";
 ?>
+<?php get_footer();?>
