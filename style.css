@@ -59,7 +59,7 @@ nav.main-navigation ul li a{
     text-transform: uppercase;
     font-size: 16px;
     font-size: 1.6rem;
-    padding: 10px 0;
+    padding: 10px 0 ;
 }
 nav.main-navigation ul li a:hover{
     background-color: transparent;
@@ -73,6 +73,24 @@ nav.main-navigation ul li a:hover{
 @media (min-width: 768px){
     nav.main-navigation ul li{
         margin-right: 20px;
+    }
+}
+nav.main-navigation ul li.current_page_item,
+nav.main-navigation ul li.current_page_parent{
+    background-color: #004d70;
+}
+@media (min-width: 768px) {
+    nav.main-navigation ul li.current_page_item,
+    nav.main-navigation ul li.current_page_parent {
+        border-bottom: 3px solid #ffff;
+        background-color: transparent;
+    }
+    nav.main-navigation ul li a{
+        color: #ffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-size: 1.6rem;
+        padding: 10px 0 0 0;
     }
 }
 /*Header*/
