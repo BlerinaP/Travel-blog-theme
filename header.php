@@ -20,7 +20,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" class="img-responsive">
+                    <a href="<?php echo esc_url(home_url('/')) ?>">
+                       <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" class="img-responsive">
+                    </a>
                 </div>
 
                 <div class="navbar-right">
@@ -37,10 +39,14 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="page-title">
-                    <?php $description = get_bloginfo('description', 'display'); ?>
-                    <h1 class="title"><span><?php echo $description; ?></span></h1>
+                    <?php if(is_front_page()): ?>
+                        <?php $description = get_bloginfo('description', 'display'); ?>
+                        <h1 class="title"><span><?php echo $description; ?></span></h1>
+                    <?php else: ?>
+                        <h1 class="title"><span><?php the_title(); ?></span></h1>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -23,7 +23,9 @@ $featured = wp_get_attachment_image_src($id_image, 'full');?>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" class="img-responsive">
+                    <a href="<?php echo esc_url(home_url('/')) ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" class="img-responsive">
+                    </a>
                 </div>
 
                 <div class="navbar-right">
