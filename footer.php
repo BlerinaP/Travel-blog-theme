@@ -7,10 +7,19 @@
                   </div>
               </div>
               <div class="col-sm-4">
-                  menu here
+                  <h3>Follow Us</h3>
+                 <?php
+                 wp_nav_menu(array(
+                  'theme_location' => 'social_menu'
+                 ));
+                 ?>
               </div>
           </div>
       </div>
+
+      <p class="text-center site-info">
+          The travel Blog <?php echo date('Y'); ?>
+      </p>
    </footer>
      <?php wp_footer(); ?>
    </body>
